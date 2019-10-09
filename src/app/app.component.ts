@@ -33,7 +33,7 @@ export class AppComponent {
         `,
       })
       .subscribe(
-        res => {
+        (res: any) => {
         this.loaded = true
         this.news = res.data.hn.topStories
       }, 
